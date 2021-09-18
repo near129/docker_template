@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  app:
+    build:
+      context: .
+    platform: linux/amd64
+    # volumes:
+    #   - .:/workspace
+    command: "poetry run /bin/bash"
